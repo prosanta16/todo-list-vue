@@ -1,19 +1,23 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+  <div id="app" class="container">
+    <TodoInput/>
+    <TodoList/>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import TodoInput from '@/components/todoInput';
+import TodoList from '@/components/todoList';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TodoInput,
+    TodoList
+
   }
-}
+};
 </script>
 
 <style>
